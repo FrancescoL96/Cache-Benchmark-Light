@@ -15,17 +15,19 @@
 using namespace timer;
 
 // Set PRINT to 1 for debug output
-#define PRINT 1
+#define PRINT 0
 #define FROM_debug 0
 #define TO_debug 16
 
 // Set ZERO to 1 to use Zero copy, set ZERO to 0 to use Unified Memory
 #define ZERO 1
 
+// N is later overwritten as N = N^POW, making N the size of the input array
 unsigned int N = 2;
 const int POW = 16;
+
 const float MINUTES = 0.1; // Dictates the length of the benchmark, but doesn't actually follow the length 
-const int SUMS = 8;
+
 const int BLOCK_SIZE_X = 512;
 const int BLOCK_SIZE_Y = 1;
 
